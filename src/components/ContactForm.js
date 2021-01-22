@@ -20,7 +20,7 @@ const ContactForm = () => {
 						name="firstName"
 						type="text"
 						placeholder="Edd"
-						ref={register({ required: true, maxLength: 3 })}
+						ref={register({ required: true, minLength: 3 })}
 					/>
 					{errors.firstName && (
 						<p>
