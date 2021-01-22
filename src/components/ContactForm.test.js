@@ -10,6 +10,8 @@ test("renders ContactForm", () => {
 test("can fill in form and display", () => {
 	render(<ContactForm />);
 
+	// userEvent.type(screen.getByLabelText(/first name/i), "Nick");
+
 	const firstNameInput = screen.getByLabelText(/first name/i);
 	const lastNameInput = screen.getByLabelText(/last name/i);
 	const emailInput = screen.getByLabelText(/email/i);
